@@ -16,8 +16,8 @@ import full01 from '../assets/images/fulls/paylease.png'
 import full02 from '../assets/images/fulls/moo.png'
 import full03 from '../assets/images/fulls/bliz.png'
 import full04 from '../assets/images/fulls/newcars.png'
-import full05 from '../assets/images/fulls/mocyes.png'
-import full06 from '../assets/images/fulls/clearyes.png'
+import full05 from '../assets/images/fulls/moc.png'
+import full06 from '../assets/images/fulls/clear.png'
 
 const DEFAULT_IMAGES = [
     { id: '1', source: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
