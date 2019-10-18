@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 import Gallery from '../components/Gallery'
 
 import thumb01 from '../assets/images/thumbs/paylease.png'
-import thumb02 from '../assets/images/thumbs/moo.png'
+import thumb02 from '../assets/images/thumbs/moo.jpg'
 import thumb03 from '../assets/images/thumbs/bliz.jpg'
 import thumb04 from '../assets/images/thumbs/newcars.jpg'
 import thumb05 from '../assets/images/thumbs/moc.jpg'
