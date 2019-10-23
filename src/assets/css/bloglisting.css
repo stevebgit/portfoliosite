@@ -1,0 +1,24 @@
+div.blog-post-preview {    
+	border-bottom: 2px solid #e6e6e6;    
+	padding-top: 1rem;    
+	padding-bottom: 1rem;    
+	margin-bottom: 1rem;
+}
+
+.blog-posts h1 > * {
+	font-size: 1.4rem !important;
+	text-decoration-line: none !important;
+	border-bottom: none;
+}
+
+.blog-posts h1 > a:hover, 
+.blog-posts h1 > a:active, 
+.blog-posts h1 > a:focus {
+  outline: 0;
+}
+
+
+.blog-posts h2 {
+	font-size: 0.8rem !important;
+	font-weight: 100 !important;
+}
