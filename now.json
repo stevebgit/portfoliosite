@@ -1,0 +1,14 @@
+{
+	"build": {
+		"env": {
+			"VARIABLE_NAME": "@environment-variable-name",
+			"CONTENTFUL_SPACE_ID": "buxe80mty13p",
+			"CONTENTFUL_ACCESS_TOKEN": "C7fTKihs-8lkock7w0wg433bJnTmcM64Qs4OGTkLoR4"
+		}
+	},
+	"env": {
+		"VARIABLE_NAME": "@environment-variable-name",
+		"CONTENTFUL_SPACE_ID": "buxe80mty13p",
+		"CONTENTFUL_ACCESS_TOKEN": "C7fTKihs-8lkock7w0wg433bJnTmcM64Qs4OGTkLoR4"
+	}
+}
