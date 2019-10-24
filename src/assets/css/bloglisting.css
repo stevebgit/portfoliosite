@@ -1,14 +1,20 @@
 div.blog-post-preview {    
-	border-bottom: 2px solid #e6e6e6;    
+	
 	padding-top: 1rem;    
-	padding-bottom: 1rem;    
+	 
 	margin-bottom: 1rem;
 }
-
+/* title */
 .blog-posts h1 > * {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 1.4rem !important;
+	font-weight: bold;
 	text-decoration-line: none !important;
 	border-bottom: none;
+}
+
+.blog-posts h1 {
+	margin-bottom: 1px;
 }
 
 .blog-posts h1 > a:hover, 
@@ -18,7 +24,9 @@ div.blog-post-preview {
 }
 
 
+/* Date */
 .blog-posts h2 {
 	font-size: 0.8rem !important;
 	font-weight: 100 !important;
+	line-height:.05em;
 }
