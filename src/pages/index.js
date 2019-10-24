@@ -51,6 +51,9 @@ class HomeIndex extends React.Component {
                         <p>20 Years of Software Development experience, mostly Server End with SQL and OO-based PHP. <br></br> Also experienced with Javascript: ReactJS 16.x, or older technologies like jQuery</p>
                         <ul className="actions">
                             <li><a href="#" className="button">Learn More</a></li>
+                            <li> Or </li>
+
+							<li><a href="/blog" className="button">Blog</a></li>
                         </ul>
                     </section>
 
@@ -71,7 +74,7 @@ class HomeIndex extends React.Component {
 
                     <section id="three">
                         <h2>Get In Touch</h2>
-                        <p>Currently Available for Corporate to Corporate work</p>
+                        <p>Currently Available for Consultant Software Development work</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
                                 <form method="post" action="#">
@@ -89,17 +92,16 @@ class HomeIndex extends React.Component {
                                 <ul className="labeled-icons">
                                     <li>
                                         <h3 className="icon fa-home"><span className="label">Address</span></h3>
-                                        1234 Somewhere Rd.<br />
-                                        Nashville, TN 00000<br />
+                                        Omaha, NE<br />
                                         United States
                                     </li>
                                     <li>
                                         <h3 className="icon fa-mobile"><span className="label">Phone</span></h3>
-                                        000-000-0000
+                                        310-719-5904
                                     </li>
                                     <li>
                                         <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
-                                        <a href="#">hello@untitled.tld</a>
+                                        <a href="#">steveb428@gmail.com</a>
                                     </li>
                                 </ul>
                             </div>
