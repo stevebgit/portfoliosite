@@ -50,7 +50,7 @@ class HomeIndex extends React.Component {
                         </header>
                         <p>20 Years of Software Development experience, mostly Server End with SQL and OO-based PHP. <br></br> Also experienced with Javascript: ReactJS 16.x, or older technologies like jQuery</p>
                         <ul className="actions">
-                            <li><a href="#" className="button">Learn More</a></li>
+                            <li><a href="/learn-more" className="button">Learn More</a></li>
                             <li> Or </li>
 
 							<li><a href="/blog" className="button">Blog</a></li>
