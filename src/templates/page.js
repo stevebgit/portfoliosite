@@ -1,7 +1,6 @@
-import React from "react"
-import { graphql } from "gatsby"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-
+import React from "react";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { Link, graphql, useStaticQuery } from 'gatsby'
 import Layout from "../components/layout"
 import Helmet from 'react-helmet'
 

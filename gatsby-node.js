@@ -32,4 +32,32 @@ module.exports.createPages = async ({ graphql, actions }) => {
 			}
 		})
 	})
+
+
+	// =================================================
+
+	const pageTemplate = path.resolve('./src/templates/page.js')
+	const res1 = await graphql(`
+        query {
+            allContentfulPage {
+                edges {
+                    node {
+                        slug
+                    }
+                }
+            }
+        }
+    `)
+
+	res1.data.allContentfulPage.edges.forEach((edge) => {
+		createPage({
+			component: pageTemplate,
+			path: `/${edge.node.slug}`,
+			context: {
+				slug: edge.node.slug
+			}
+		})
+	})
+
+
 }
