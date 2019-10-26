@@ -75,6 +75,7 @@ class HomeIndex extends React.Component {
                     <section id="three">
                         <h2>Get In Touch</h2>
                         <p>Currently Available for Consultant Software Development work</p>
+						<p><strong>Form not yet set up - please use contact information on right</strong></p>
                         <div className="row">
                             <div className="8u 12u$(small)">
                                 <form method="post" action="#">
