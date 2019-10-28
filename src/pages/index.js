@@ -98,7 +98,7 @@ class HomeIndex extends React.Component {
                                     </li>
                                     <li>
                                         <h3 className="icon fa-mobile"><span className="label">Phone</span></h3>
-                                        310-719-5904
+                                        ( removed for now.. getting spam callers )
                                     </li>
                                     <li>
                                         <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
