@@ -22,7 +22,7 @@ const Blog1 = props => {
 			"embedded-asset-block": (node) => {
 				const alt = node.data.target.fields.title['en-US']
 				const url = node.data.target.fields.file['en-US'].url
-				return <img alt={alt} src={url} />
+				return <img alt={alt} src={url} width={"1024"} height={"515"}  />
 			}
 		}
 	}
@@ -35,7 +35,7 @@ const Blog1 = props => {
 			</Helmet>
 			<div id="main">
 				<h1>{props.data.contentfulPage.title}</h1>
-				{documentToReactComponents(props.data.contentfulPage.body.json)}
+				{documentToReactComponents(props.data.contentfulPage.body.json, options)}
 			</div>
 		</Layout>
 	)
