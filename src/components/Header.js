@@ -7,7 +7,6 @@ class Header extends React.Component {
     render() {
         return (
 			<div>
-				
 				<header id="header">
 					
 					<div className="inner">
