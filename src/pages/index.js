@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
-// import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 
 import thumb01 from '../assets/images/thumbs/paylease.png'
@@ -29,11 +28,32 @@ const DEFAULT_IMAGES = [
 ];
 
 class HomeIndex extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = { _replyto: '', email: '' };
+
+		this.handleEmailChange = this.handleEmailChange.bind(this);
+		this.handleNameChange = this.handleNameChange.bind(this);
+		this.handleSubmit = this.handleSubmit.bind(this);
+	}
+
+	handleEmailChange(event) {
+		this.setState({ _replyto: event.target.value });
+	}
+	handleNameChange(event) {
+		this.setState({ name: event.target.value });
+	}
+
+	handleSubmit(event) {
+		//alert('A name was submitted: ' + this.state.name);
+		//event.preventDefault();
+	
+	}
 
     render() {
         const siteTitle = "Serverside and Client Side Software Development"
         const siteDescription = ""
-
+		
         return (
             <Layout>
                 <Helmet>
@@ -75,19 +95,22 @@ class HomeIndex extends React.Component {
                     <section id="three">
                         <h2>Get In Touch</h2>
                         <p>Currently Available for Consultant Software Development work</p>
-						<p><strong>Form not yet set up - please use contact information on right</strong></p>
                         <div className="row">
                             <div className="8u 12u$(small)">
-                                <form method="post" action="#">
+
+								{/*  FORM START ------------------------------------------------------*/}
+
+								<form method="post" action="https://formspree.io/xvopyogg" >
                                     <div className="row uniform 50%">
-                                        <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                                        <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" value={this.state.value} onChange={this.handleNameChange}  /></div>
+										<div className="6u 12u$(xsmall)"><input type="email" name="_replyto" id="email" placeholder="Email" onChange={this.handleEmailChange}/></div>
                                         <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
                                     </div>
-                                </form>
-                                <ul className="actions">
-                                    <li><input type="submit" value="Send Message" /></li>
-                                </ul>
+                                
+									<ul className="actions" style={{marginTop: "20px"}}>
+										<li><input type="submit" value="Send Message" /></li>
+									</ul>
+								</form>
                             </div>
                             <div className="4u 12u$(small)">
                                 <ul className="labeled-icons">
@@ -96,14 +119,14 @@ class HomeIndex extends React.Component {
                                         Omaha, NE<br />
                                         United States
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <h3 className="icon fa-mobile"><span className="label">Phone</span></h3>
                                         ( removed for now.. getting spam callers )
                                     </li>
                                     <li>
                                         <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
                                         <a href="#">steveb428@gmail.com</a>
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </div>
                         </div>
