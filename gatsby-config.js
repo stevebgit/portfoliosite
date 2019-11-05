@@ -12,6 +12,13 @@ module.exports = {
 			accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
 		}
 	},
+	{
+			resolve: `gatsby-plugin-google-analytics`,
+			options: {
+				// replace "UA-XXXXXXXXX-X" with your own Tracking ID
+				trackingId: "UA-151508782-1",
+			},
+	},
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
