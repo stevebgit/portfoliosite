@@ -52,7 +52,7 @@ class HomeIndex extends React.Component {
 
     render() {
         const siteTitle = "Serverside and Client Side Software Development"
-        const siteDescription = ""
+        const siteDescription = "Gatsby Laravel or ReactJS Independent Consultant"
 		
         return (
             <Layout>

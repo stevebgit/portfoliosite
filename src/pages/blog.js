@@ -7,7 +7,7 @@ import Layout from '../components/layout'
 //import blogStyles from './blog.module.scss'
 const BlogPage = () => {
 	const siteTitle = "Serverside and Client Side Software Development"
-	const siteDescription = ""
+	const siteDescription = "Gatsby / GatsbyJS Developer Blog"
 
 	const data = useStaticQuery(graphql `
        query {

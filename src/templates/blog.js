@@ -20,6 +20,9 @@ export const query = graphql`
 `
 
 const Blog = props => {
+	const siteTitle = "Serverside and Client Side Software Development"
+	const siteDescription = "Gatsby / GatsbyJS Developer Blog"
+
 	const disqusShortname = 'gatsbydeveloper'
 	const baseUrl = "https://gatsbydeveloper.com"
 	const disqusConfig = {
@@ -40,9 +43,8 @@ const Blog = props => {
 	return (
 		<Layout>
 			<Helmet>
-				{/* <title>{siteTitle}</title>
-				<meta name="description" content={siteDescription} /> */}
-
+				<title> {siteTitle} </title> 
+				<meta name="description" content={siteDescription}/>
 			</Helmet>
 
 			<div id="main">
