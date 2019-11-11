@@ -25,33 +25,63 @@ const BlogPage = () => {
        	}
 	   }`)
   return ( 
-	  <Layout>
-		    <Helmet>
-		    	<title> {siteTitle} </title> 
-				<meta name="description" content={siteDescription}/>
-		    </Helmet>
-			<div id="main">
-				<section id="one">
-					<h1> Blog </h1>
-				  <div className="blog-posts"> 
-				   {
-					  data.allContentfulArticle.edges.map((edge) => {
-						  return (
-							  <div className="blog-post-preview" key={edge.node.slug}> 
-								<h1>
-									<Link to={`/blog/${edge.node.slug}`}>{edge.node.articleTitle}</Link>
-								</h1>
-								<h2> {edge.node.articleData} </h2>
-								{/* <p>{post.excerpt}</p>  */}
-							</div>
-							
-						  )
-					  })
-				  } 
-				  </div>
-				</section>
-			</div> 
-	  	</Layout>
+		<div class="grid-container">
+			<header class="header">
+				<h3>A WordPress blogging layout</h3>
+			</header>
+		
+		<main class="main">
+
+			<article class="entry">
+				<figure class="entry-thumb">
+					<img src="https://placehold.it/540x400" alt=""/>>
+				</figure>
+				
+				<div class="entry-content">
+					<header class="entry-header">
+						<h3 class="entry-title"><a href="#">Toddler Scientists Finally Determine Number Of Peas That Fit Into Ear Canal</a></h3>
+
+						<div class="entry-meta">
+							2 Comments
+						</div>
+					</header>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+			</article>
+			
+			<article class="entry">
+				<figure class="entry-thumb">
+					<img src="https://placehold.it/540x400" alt=""/>
+				</figure>
+				
+				<div class="entry-content">
+					<header class="entry-header">
+						
+						<h3 class="entry-title"><a href="#">Trump Comforts Grieving War Widow By Assuring Her He Will Never Die</a></h3>
+	
+						<div class="entry-meta">
+							1 Comments
+						</div>
+					</header>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+			</article>
+		
+			
+		</main>
+		
+		<div class="sidebar sidebar-left">
+			Left Sidebar
+		</div>
+		
+		<div class="sidebar sidebar-right">
+			Right Sidebar
+		</div>
+		
+		<footer class="footer">
+			Footer
+		</footer>
+	</div>
   	)
   }
 
