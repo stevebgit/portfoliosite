@@ -19,7 +19,11 @@ const BlogPage = () => {
        				articleTitle
 					articleData(formatString: "MMMM Do, YYYY")
 					slug
-					
+					 thumbnail {
+						file {
+						url
+						}
+					}
        			}
        		}
        	}
@@ -27,7 +31,7 @@ const BlogPage = () => {
   return ( 
 		<div class="grid-container">
 			<header class="header">
-				<h3>A WordPress blogging layout</h3>
+			
 			</header>
 		
 		<main class="main">
@@ -38,7 +42,7 @@ const BlogPage = () => {
 
 								<article class="entry" key={edge.node.slug}>
 									<figure class="entry-thumb">
-										<img src="https://placehold.it/540x400" alt=""/>
+									  <img src={edge.node.thumbnail.file.url} alt=""/>
 									</figure>
 
 									<div class="entry-content">
@@ -60,10 +64,6 @@ const BlogPage = () => {
 					  })
 				  } 
 		</main>
-		
-		<div class="sidebar sidebar-left">
-			Left Sidebar
-		</div>
 		
 		<div class="sidebar sidebar-right">
 			Right Sidebar
