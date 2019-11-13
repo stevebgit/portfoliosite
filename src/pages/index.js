@@ -61,8 +61,11 @@ class HomeIndex extends React.Component {
                         <meta name="description" content={siteDescription} />
                         <link rel="canonical" href="https://gatsbydeveloper.com/" />
                         <meta name="robots" content="index, follow"> 
-
-						
+                        <meta property=”og:title” content={siteTitle} />
+                        <meta property=”og:description” content={siteDescription} />
+                        <meta property=”og:image” content=”LINK TO THE IMAGE FILE” />
+                        <meta name=”twitter:site” content=”@gatsbydeveloper”>
+                        <meta name=”viewport” content=”width=device-width,initial-scale=1″>
                 </Helmet>
 
                 <div id="main">
