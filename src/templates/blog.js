@@ -23,6 +23,8 @@ const Blog = props => {
 	const siteTitle = "Serverside and Client Side Software Development"
 	const siteDescription = "Gatsby / GatsbyJS Developer Blog"
 
+	newFilePath = `src/pages${pathname.slice(0, -1)}.js`
+
 	const disqusShortname = 'gatsbydeveloper'
 	const baseUrl = "https://gatsbydeveloper.com"
 	const disqusConfig = {
@@ -43,8 +45,9 @@ const Blog = props => {
 	return (
 		<Layout>
 			<Helmet>
-				<title> {siteTitle} </title> 
-				<meta name="description" content={siteDescription}/>
+				<title> {siteTitle} - {props.data.contentfulArticle.thumbnailAlt} </title> 
+				<meta name="description" content={props.data.contentfulArticle.articleSummary}/>
+				<meta name="robots" content="index, follow" />
 			</Helmet>
 
 			<div id="main">

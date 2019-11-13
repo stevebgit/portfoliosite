@@ -30,8 +30,9 @@ const Blog1 = props => {
 	return (
 		<Layout>
 			<Helmet>
-				{/* <title>{siteTitle}</title>
-				<meta name="description" content={siteDescription} /> */}
+				<title>{siteTitle}</title>
+				<meta name="description" content={siteDescription} /> 
+				<meta name="robots" content="index, follow" />>
 			</Helmet>
 			<div id="main">
 				<h1>{props.data.contentfulPage.title}</h1>

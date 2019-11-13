@@ -59,7 +59,8 @@ class HomeIndex extends React.Component {
                 <Helmet>
                         <title>{siteTitle}</title>
                         <meta name="description" content={siteDescription} />
-                        <link rel=”canonical” href=”https://gatsbydeveloper.com/” />
+                        <link rel="canonical" href="https://gatsbydeveloper.com/" />
+                        <meta name="robots" content="index, follow"> 
 
 						
                 </Helmet>
