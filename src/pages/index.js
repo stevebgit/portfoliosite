@@ -19,12 +19,12 @@ import full05 from '../assets/images/fulls/moc.png'
 import full06 from '../assets/images/fulls/clear.png'
 
 const DEFAULT_IMAGES = [
-    { id: '1', source: full01, thumbnail: thumb01, caption: 'San Diego, CA', description: 'SQL-heavy project, with a lot of legacy OO-based PHP'},
-    { id: '2', source: full02, thumbnail: thumb02, caption: 'Omaha, NE', description: 'Heavy on Laravel and VueJS as well as CSS Desgin.'},
-    { id: '3', source: full03, thumbnail: thumb03, caption: 'Irvine, CA', description: 'Laravel project.'},
-    { id: '4', source: full04, thumbnail: thumb04, caption: 'Santa Monica, CA', description: 'OO PHP and Html5/CSS.'},
-    { id: '5', source: full05, thumbnail: thumb05, caption: 'Burbank, CA', description: 'Created Enterprise-size CMS for NBC Universal using Laravel'},
-    { id: '6', source: full06, thumbnail: thumb06, caption: 'Kirkland, CA', description: "Zend Framework, as well as consuming API's to create a front-end eCommerce U.I."}
+    { id: '1', alt: "This position involved mysql development and a large percentage of PHP", source: full01, thumbnail: thumb01, caption: 'San Diego, CA', description: 'SQL-heavy project, with a lot of legacy OO-based PHP'},
+    { id: '2', alt: "Laravel and VueJS, as well as a lot of CSS Design", source: full02, thumbnail: thumb02, caption: 'Omaha, NE', description: 'Heavy on Laravel and VueJS as well as CSS Design.'},
+    { id: '3', alt: "Laravel, PHP, and Front End Development", source: full03, thumbnail: thumb03, caption: 'Irvine, CA', description: 'Laravel project.'},
+    { id: '4', alt: "NewCars.com - Object Oriented PHP Codebase as well as CSS and Javascript", source: full04, thumbnail: thumb04, caption: 'Santa Monica, CA', description: 'OO PHP and Html5/CSS.'},
+    { id: '5', alt: "Laravel and Javascript, Ajax, jQuery and CSS Foundations - project for NBC Universal", source: full05, thumbnail: thumb05, caption: 'Burbank, CA', description: 'Created Enterprise-size CMS for NBC Universal using Laravel'},
+    { id: '6', alt: "Clear.com eCommerce Project built with Zend Framework, and a major portion of Javascript", source: full06, thumbnail: thumb06, caption: 'Kirkland, CA', description: "Zend Framework, as well as consuming API's to create a front-end eCommerce U.I."}
 ];
 
 class HomeIndex extends React.Component {
@@ -59,6 +59,8 @@ class HomeIndex extends React.Component {
                 <Helmet>
                         <title>{siteTitle}</title>
                         <meta name="description" content={siteDescription} />
+                        <link rel=”canonical” href=”https://gatsbydeveloper.com/” />
+
 						
                 </Helmet>
 

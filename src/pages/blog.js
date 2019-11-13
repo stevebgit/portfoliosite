@@ -42,7 +42,7 @@ const BlogPage = () => {
 
 								<article class="entry" key={edge.node.slug}>
 									<figure class="entry-thumb">
-									  <img src={edge.node.thumbnail.file.url} alt=""/>
+									  <img src={edge.node.thumbnail.file.url} alt={edge.node.thumbnailAlt} />
 									</figure>
 
 									<div class="entry-content">

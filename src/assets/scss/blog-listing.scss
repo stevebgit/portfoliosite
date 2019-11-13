@@ -50,6 +50,7 @@ $accent-color: #145474 !default;
   
   .entry-header {
     margin-bottom: 10px;
+
   }
   
   @media (min-width: 600px) {
@@ -58,13 +59,18 @@ $accent-color: #145474 !default;
     }
   
     .entry-thumb {
-      width: 100px;
+      
       flex: none;
       margin-right: 15px;
     }
   
+    .entry-thumb img {
+      height: 150px;
+      width: 200px;
+    }
     .entry-header {
       display: flex;
+      flex-direction: column;
     }
     
     .entry-title {
@@ -98,7 +104,7 @@ $accent-color: #145474 !default;
   }
   
   .header {
-		background-image: url("../images/sunset-3689760_1280.jpg");
+	//background-image: url("../images/sunset-3689760_1280.jpg");
 		background-repeat: no-repeat;
     	background-position: center; 
     	position: relative;
