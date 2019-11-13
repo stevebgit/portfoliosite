@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, graphql, useStaticQuery } from 'gatsby'
-import '../assets/css/bloglisting.css'
+import '../assets/scss/blog-listing.scss'
 
 import Layout from '../components/layout'
 //import blogStyles from './blog.module.scss'
@@ -32,42 +32,33 @@ const BlogPage = () => {
 		
 		<main class="main">
 
-			<article class="entry">
-				<figure class="entry-thumb">
-					<img src="https://placehold.it/540x400" alt=""/>>
-				</figure>
-				
-				<div class="entry-content">
-					<header class="entry-header">
-						<h3 class="entry-title"><a href="#">Toddler Scientists Finally Determine Number Of Peas That Fit Into Ear Canal</a></h3>
+				{
+					  data.allContentfulArticle.edges.map((edge) => {
+						  return (
 
-						<div class="entry-meta">
-							2 Comments
-						</div>
-					</header>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
-			</article>
-			
-			<article class="entry">
-				<figure class="entry-thumb">
-					<img src="https://placehold.it/540x400" alt=""/>
-				</figure>
-				
-				<div class="entry-content">
-					<header class="entry-header">
-						
-						<h3 class="entry-title"><a href="#">Trump Comforts Grieving War Widow By Assuring Her He Will Never Die</a></h3>
-	
-						<div class="entry-meta">
-							1 Comments
-						</div>
-					</header>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
-			</article>
-		
-			
+								<article class="entry" key={edge.node.slug}>
+									<figure class="entry-thumb">
+										<img src="https://placehold.it/540x400" alt=""/>
+									</figure>
+
+									<div class="entry-content">
+										<header class="entry-header">
+											<h3 class="entry-title">
+													<Link to={`/blog/${edge.node.slug}`}>{edge.node.articleTitle}</Link>
+											</h3>
+											<h6> {edge.node.articleData} </h6>
+												{/* <div class="entry-meta">
+													2 Comments
+												</div> */}
+										</header>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</article>
+							  
+							
+						  )
+					  })
+				  } 
 		</main>
 		
 		<div class="sidebar sidebar-left">
