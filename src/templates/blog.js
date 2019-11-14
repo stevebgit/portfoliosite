@@ -9,7 +9,8 @@ import { DiscussionEmbed } from 'disqus-react'
 export const query = graphql`
   query($slug: String!) {
     contentfulArticle(slug: { eq: $slug }) {
-      articleTitle
+			articleTitle
+			thumbnailAlt
 	  articleData(formatString: "MMMM Do, YYYY")
 	  id
       articleBody {
@@ -23,7 +24,7 @@ const Blog = props => {
 	const siteTitle = "Serverside and Client Side Software Development"
 	const siteDescription = "Gatsby / GatsbyJS Developer Blog"
 
-	newFilePath = `src/pages${pathname.slice(0, -1)}.js`
+	//newFilePath = `src/pages${pathname.slice(0, -1)}.js`
 
 	const disqusShortname = 'gatsbydeveloper'
 	const baseUrl = "https://gatsbydeveloper.com"
@@ -45,7 +46,7 @@ const Blog = props => {
 	return (
 		<Layout>
 			<Helmet>
-				<title> {siteTitle} - {props.data.contentfulArticle.thumbnailAlt} </title> 
+				<title> {props.data.contentfulArticle.thumbnailAlt} </title> 
 				<meta name="description" content={props.data.contentfulArticle.articleSummary}/>
 				<meta name="robots" content="index, follow" />
 			</Helmet>

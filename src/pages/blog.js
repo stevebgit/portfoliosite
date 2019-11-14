@@ -6,8 +6,8 @@ import '../assets/scss/blog-listing.scss'
 import Layout from '../components/layout'
 //import blogStyles from './blog.module.scss'
 const BlogPage = () => {
-	const siteTitle = "Serverside and Client Side Software Development"
-	const siteDescription = "Gatsby / GatsbyJS Developer Blog"
+	// const siteTitle = "Serverside and Client Side Software Development"
+	// const siteDescription = "Gatsby / GatsbyJS Developer Blog"
 
 	const data = useStaticQuery(graphql `
        query {
@@ -29,12 +29,19 @@ const BlogPage = () => {
        	}
 	   }`)
   return ( 
-		<div class="grid-container">
-			<header class="header">
+		<div className="grid-container">
+			<header className="header">
 			
 			</header>
+			<div className="menu">
+				<ul>
+					<li><a href="/" className="item">Home</a>     </li>
+					<li><Link to="/#contact-form" className="item">Contact</Link></li>
+					{/* <li><a href="/#contact-form" className="item">Contact</a></li> */}
+				</ul>
+			</div>
 		
-		<main class="main">
+		<main className="main">
 
 				{
 					  data.allContentfulArticle.edges.map((edge) => {
@@ -55,7 +62,7 @@ const BlogPage = () => {
 													2 Comments
 												</div> */}
 										</header>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+										<p>{edge.node.articleSummary}</p>
 									</div>
 								</article>
 							  

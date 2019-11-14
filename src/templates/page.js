@@ -1,6 +1,6 @@
 import React from "react";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { Link, graphql, useStaticQuery } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import Helmet from 'react-helmet'
 
@@ -30,8 +30,8 @@ const Blog1 = props => {
 	return (
 		<Layout>
 			<Helmet>
-				<title>{siteTitle}</title>
-				<meta name="description" content={siteDescription} /> 
+				<title>{props.data.contentfulPage.title}</title>
+				<meta name="description" content={props.data.contentfulPage.pageSummary} /> 
 				<meta name="robots" content="index, follow" />>
 			</Helmet>
 			<div id="main">

@@ -6,6 +6,7 @@ $accent-color: #145474 !default;
 
 .header { grid-area: header; }
 .main { grid-area: main; }
+.menu { grid-area: menu; }
 
 .sidebar-right { grid-area: sidebar-right; }
 .footer { grid-area: footer; }
@@ -16,8 +17,9 @@ $accent-color: #145474 !default;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: auto 1fr auto auto;
+    grid-template-rows: auto auto 1fr auto auto;
     grid-template-areas: "header"
+                          "menu"
                          "main"
                          "sidebar-right"
                          "footer";
@@ -28,9 +30,28 @@ $accent-color: #145474 !default;
       grid-template-columns: 1fr 150px;
       grid-template-rows:   auto 1fr auto;
       grid-template-areas: "header header"
+                           "menu menu"
                            "main sidebar-right"
                            "footer footer";
     }
+  }
+
+
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .menu a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: black !important;
+    font-weight: 500;
   }
 
   @media (min-width: 770px) {
@@ -38,9 +59,18 @@ $accent-color: #145474 !default;
       grid-template-columns: 1fr 350px;
       grid-template-rows:   auto 1fr auto;
       grid-template-areas: "header header"
+                            "menu  menu"
                            "main sidebar-right"
                            "footer footer";
     }
+
+    // .menu ul {
+    //   display: flex;
+    // }
+    .menu li {
+      flex: 1 1 0;
+    }
+
   }
   
   // Post entry styles (flexbox)
@@ -50,7 +80,6 @@ $accent-color: #145474 !default;
   
   .entry-header {
     margin-bottom: 10px;
-
   }
   
   @media (min-width: 600px) {
@@ -62,11 +91,13 @@ $accent-color: #145474 !default;
       
       flex: none;
       margin-right: 15px;
+      
     }
   
     .entry-thumb img {
       height: 150px;
       width: 200px;
+      border: 1px solid black;
     }
     .entry-header {
       display: flex;
@@ -103,6 +134,7 @@ $accent-color: #145474 !default;
     text-align: center;
   }
   
+
   .header {
 	//background-image: url("../images/sunset-3689760_1280.jpg");
 		background-repeat: no-repeat;

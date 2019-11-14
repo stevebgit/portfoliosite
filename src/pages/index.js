@@ -60,12 +60,12 @@ class HomeIndex extends React.Component {
                         <title>{siteTitle}</title>
                         <meta name="description" content={siteDescription} />
                         <link rel="canonical" href="https://gatsbydeveloper.com/" />
-                        <meta name="robots" content="index, follow"> 
-                        <meta property=”og:title” content={siteTitle} />
-                        <meta property=”og:description” content={siteDescription} />
-                        <meta property=”og:image” content=”LINK TO THE IMAGE FILE” />
-                        <meta name=”twitter:site” content=”@gatsbydeveloper”>
-                        <meta name=”viewport” content=”width=device-width,initial-scale=1″>
+                        <meta name="robots" content="index, follow" />  
+                        <meta property="og:title" content={siteTitle} />
+                        <meta property="og:description" content={siteDescription} />
+                        <meta property="og:image" content="LINK TO THE IMAGE FILE" />
+                        <meta name="twitter:site" content="@gatsbydeveloper" />
+                        <meta name="viewport" content="width=device-width,initial-scale=1" />
                 </Helmet>
 
                 <div id="main">
@@ -76,7 +76,7 @@ class HomeIndex extends React.Component {
                         </header>
                         <p>20 Years of Software Development experience, mostly Server End with SQL and OO-based PHP. <br></br> Also experienced with Javascript: ReactJS 16.x, or older technologies like jQuery</p>
                         <ul className="actions">
-                            {/* <li><a href="/learn-more" className="button">Learn More</a></li> */}
+                           
 							<li><Link to={'more-about-me'} className="button">Learn More</Link></li>
                             <li> Or </li>
 							<li><Link to={'/blog'} className="button">Blog</Link></li>
@@ -86,11 +86,12 @@ class HomeIndex extends React.Component {
                     <section id="two">
                         <h2>Recent Work</h2>
 
-                        <Gallery images={DEFAULT_IMAGES.map(({ id, source, thumbnail, caption, description }) => ({
+                        <Gallery images={DEFAULT_IMAGES.map(({ id, source, thumbnail, caption, description, alt }) => ({
                             source,
                             thumbnail,
                             caption,
-                            description
+                            description,
+                            alt
                         }))} />
 
                         {/* <ul className="actions">
@@ -98,7 +99,9 @@ class HomeIndex extends React.Component {
                         </ul> */}
                     </section>
 
-                    <section id="three">
+
+                    <a name="contact-form" />
+                    <section>
                         <h2>Get In Touch</h2>
                         <p>Currently Available for Consultant Software Development work</p>
                         <div className="row">
