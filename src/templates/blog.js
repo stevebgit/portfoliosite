@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
-import Layout from "../components/layout"
+import BlogLayout from "../components/bloglayout"
 import Helmet from 'react-helmet'
 import { DiscussionEmbed } from 'disqus-react'
 
@@ -44,14 +44,14 @@ const Blog = props => {
 	}
 
 	return (
-		<Layout>
+		<BlogLayout>
 			<Helmet>
 				<title> {props.data.contentfulArticle.thumbnailAlt} </title> 
 				<meta name="description" content={props.data.contentfulArticle.articleSummary}/>
 				<meta name="robots" content="index, follow" />
 			</Helmet>
 
-			<div id="main">
+			<div>
 				<h1>{props.data.contentfulArticle.articleTitle}</h1>
 				<p>{props.data.contentfulArticle.articleData}</p>
 			{documentToReactComponents(props.data.contentfulArticle.articleBody.json, options)}
@@ -60,7 +60,11 @@ const Blog = props => {
 				</div>
 			</div>
 			
-		</Layout>
+			<div class="sidebar sidebar-right">
+			
+		  </div>
+
+		</BlogLayout>
 	)
 }
 

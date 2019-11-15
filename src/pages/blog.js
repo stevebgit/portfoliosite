@@ -3,8 +3,7 @@ import Helmet from 'react-helmet'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import '../assets/scss/blog-listing.scss'
 
-import Layout from '../components/layout'
-//import blogStyles from './blog.module.scss'
+import BlogLayout from '../components/bloglayout'
 const BlogPage = () => {
 	// const siteTitle = "Serverside and Client Side Software Development"
 	// const siteDescription = "Gatsby / GatsbyJS Developer Blog"
@@ -30,17 +29,7 @@ const BlogPage = () => {
        	}
 	   }`)
   return ( 
-		<div className="grid-container">
-			<header className="header">
-			
-			</header>
-			<div className="menu">
-				<ul>
-					<li><a href="/" className="item">Home</a>     </li>
-					<li><Link to="/#contact-form" className="item">Contact</Link></li>
-					{/* <li><a href="/#contact-form" className="item">Contact</a></li> */}
-				</ul>
-			</div>
+		<BlogLayout>
 		
 		<main className="main">
 
@@ -77,10 +66,8 @@ const BlogPage = () => {
 			
 		</div>
 		
-		<footer class="footer">
 		
-		</footer>
-	</div>
+	</BlogLayout>
   	)
   }
 

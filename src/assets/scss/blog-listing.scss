@@ -11,7 +11,8 @@ $accent-color: #145474 !default;
 .sidebar-right { grid-area: sidebar-right; }
 .footer { grid-area: footer; }
 
-.grid-container {
+.grid-container,
+.grid-container-blogpage {
     max-width: 1200px;
     min-height: 95vh;
     margin: 0 auto;
@@ -26,7 +27,8 @@ $accent-color: #145474 !default;
   }
   
   @media (min-width: 540px) {
-    .grid-container {
+    .grid-container,
+    .grid-container-blogpage {
       grid-template-columns: 1fr 150px;
       grid-template-rows:   auto 1fr auto;
       grid-template-areas: "header header"
@@ -34,6 +36,7 @@ $accent-color: #145474 !default;
                            "main sidebar-right"
                            "footer footer";
     }
+    
   }
 
 
@@ -63,7 +66,10 @@ $accent-color: #145474 !default;
                            "main sidebar-right"
                            "footer footer";
     }
-
+    .grid-container-blogpage {
+        grid-template-columns: 1fr 250px;
+      
+    }
     // .menu ul {
     //   display: flex;
     // }
