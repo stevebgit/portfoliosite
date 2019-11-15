@@ -51,7 +51,7 @@ const Blog = props => {
 				<meta name="robots" content="index, follow" />
 			</Helmet>
 
-			<div>
+			<div className="main">
 				<h1>{props.data.contentfulArticle.articleTitle}</h1>
 				<p>{props.data.contentfulArticle.articleData}</p>
 			{documentToReactComponents(props.data.contentfulArticle.articleBody.json, options)}
