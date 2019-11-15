@@ -19,6 +19,7 @@ const BlogPage = () => {
        				articleTitle
 					articleData(formatString: "MMMM Do, YYYY")
 					slug
+					articleSummary
 					 thumbnail {
 						file {
 						url
@@ -73,11 +74,11 @@ const BlogPage = () => {
 		</main>
 		
 		<div class="sidebar sidebar-right">
-			Right Sidebar
+			
 		</div>
 		
 		<footer class="footer">
-			Footer
+		
 		</footer>
 	</div>
   	)

@@ -11,7 +11,7 @@ class Header extends React.Component {
 					
 					<div className="inner">
 						<a href="/" className="image avatar"><img src={avatar} alt="Software Consultant/Web Developer available" /></a>
-						< h1 > < strong > As an experience Full Stack Developer, would love to help you with your Software Development project </strong >.</h1>
+						< h1 > < strong > As an experienced Full Stack Developer, would like to help you with your Software Development project </strong >.</h1>
 					</div>
 					<Footer />
 				</header>
