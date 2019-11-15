@@ -61,7 +61,11 @@ const Blog = props => {
 			</div>
 			
 			<div class="sidebar sidebar-right">
-			
+			<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Goal of 2020 - Be the Yoda of Visual Studio Code keyboard shortcuts</p>&mdash; gatsbydeveloper (@gatsbydeveloper) <a href="https://twitter.com/gatsbydeveloper/status/1195331124526026753?ref_src=twsrc%5Etfw">November 15, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<blockquote class="twitter-tweet"><p lang="und" dir="ltr"><a href="https://t.co/LP5xrVE4NB">https://t.co/LP5xrVE4NB</a></p>&mdash; gatsbydeveloper (@gatsbydeveloper) <a href="https://twitter.com/gatsbydeveloper/status/1194699877080547329?ref_src=twsrc%5Etfw">November 13, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sam Harris - enlightenment, real meditation, and consciousness explained - <a href="https://t.co/ngRrRMGtJN">https://t.co/ngRrRMGtJN</a></p>&mdash; sb (@codertravelerMe) <a href="https://twitter.com/codertravelerMe/status/1186709317858123776?ref_src=twsrc%5Etfw">October 22, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Homeless Man does Breaking Bad impressions for food (Homelessberg) <a href="https://t.co/taxwdf6Yna">https://t.co/taxwdf6Yna</a> via <a href="https://twitter.com/YouTube?ref_src=twsrc%5Etfw">@YouTube</a></p>&mdash; sb (@codertravelerMe) <a href="https://twitter.com/codertravelerMe/status/1186693722437771264?ref_src=twsrc%5Etfw">October 22, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 		  </div>
 
 		</BlogLayout>
