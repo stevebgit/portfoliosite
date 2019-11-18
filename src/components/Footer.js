@@ -8,7 +8,7 @@ class Footer extends React.Component {
                     <ul className="icons">
                         <li><a href="https://twitter.com/codertravelerme" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
                         <li><a href="http://github.com/djangman" className="icon fa-github"><span className="label">Github</span></a></li>
-                        <li><a href="http://dribble.com" className="icon fa-dribbble"><span className="label">Dribbble</span></a></li>
+						<li><a href=" https://open.spotify.com/playlist/0e1zsySwa4K8yu96GIBVZq" className="icon fa-spotify"><span className="label">Spotify</span></a></li>
                         {/* <li><a href="" className="icon fa-envelope-o"><span className="label">Email</span></a></li> */}
                     </ul>
                     {/* <ul className="copyright">
