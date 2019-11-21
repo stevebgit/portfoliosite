@@ -34,6 +34,14 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
-    'gatsby-plugin-twitter'
+	'gatsby-plugin-twitter',
+	'gatsby-transformer-json',
+	{
+		resolve: 'gatsby-source-filesystem',
+		options: {
+			name: 'data',
+			path: `${__dirname}/src/currentBook`
+		}
+	}
   ],
 }
