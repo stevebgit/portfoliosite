@@ -1,46 +1,39 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 
-//const FooterQuote = ({ children }) => (
-
-export default () => (
+const BlogFooter = ({ children }) => (
 	<StaticQuery
-		query={graphql`
-			query FooterQuoteQuery {
-				allDataJson {
-				  edges {
-					  node {
-						  author
-						  book
-					  }
-				  }
-				}
-			}
-			`}
+		// query={graphql`
+		// 	query FooterQuoteQuery {
+		// 		allDataJson {
+		// 		  edges {
+		// 			  node {
+		// 				  author
+		// 				  book
+		// 			  }
+		// 		  }
+		// 		}
+		// 	}
+		// 	`}
 			render={data => (
-				<>
-					<p>{getFooterQuoteString(data)}</p>
-				</>
+				<footer class="footer">
+					{/* <p>{getFooterCurrentBookString(data)}</p> */}
+				</footer>
+				
 			)}
 	/>
 );
 
 
-function getFooterQuoteString(data) {
-	//quoteString = data.allFooterQuoteJson.edges.node;
-	console.log(data);
-	var quoteString = "some string";
-	return quoteString;
+function getFooterCurrentBookString(data) {
+	let numberBooks = data.allDataJson.edges.length;
+	let randomInt = Math.floor(Math.random() * numberBooks);
+	let title = data.allDataJson.edges[randomInt].node.book;
+	let author = data.allDataJson.edges[randomInt].node.author;
+	
+	let returnString = title + " by " + author;
+	
+	return returnString;
 }
 
-class BlogFooter extends React.Component {
-    render() {
-        return (
-            <footer class="footer">
-		
-            </footer>
-        )
-    }
-}
-
-//export default BlogFooter
+export default BlogFooter
