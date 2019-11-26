@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
+	siteUrl: "https://www.gatsbydeveloper.com",
     title: "Gatsby Starter - Strata by HTML5 UP",
     author: "Hunter Chang",
     description: "A Gatsby.js Starter based on Strata by HTML5 UP"
   },
   plugins: [
+	  'gatsby-plugin-sitemap',
 	{
 		resolve: 'gatsby-source-contentful',
 		options: {

@@ -12,6 +12,7 @@
     "gatsby-plugin-offline": "^3.0.19",
     "gatsby-plugin-react-helmet": "^3.1.14",
     "gatsby-plugin-sass": "^2.1.21",
+    "gatsby-plugin-sitemap": "^2.2.21",
     "gatsby-plugin-twitter": "^2.1.14",
     "gatsby-source-contentful": "^2.1.56",
     "gatsby-source-filesystem": "^2.1.38",

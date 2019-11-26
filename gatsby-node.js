@@ -33,15 +33,6 @@ module.exports.createPages = async ({ graphql, actions }) => {
 		})
 	})
 
-	// =================================================
-	createPage({
-		component: articleTemplate,
-		path: `/blog/${edge.node.slug}`,
-		context: {
-			slug: edge.node.slug
-		}
-	})
-
 
 	// =================================================
 
