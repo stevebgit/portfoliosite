@@ -9,6 +9,16 @@ $midnight-blue: #2C3E50;
 $clouds: #ECF0F1;
 
 /* the important bits */
+
+.fp-container .wrapper {
+	display: flex;
+	
+}
+
+.fp-container .wrapper > div {
+	align-items: center;
+}
+
 .fp-container li {
   perspective: 400px;
 }
@@ -91,7 +101,7 @@ $clouds: #ECF0F1;
 
 /* you can ignore this ones */
 .fp-container ul {
-  padding: 0;
+  padding: 20px;
   margin: 0 0 50px;
 
   &:after {
@@ -120,12 +130,13 @@ $clouds: #ECF0F1;
   h3 {
     margin: 0;
     font-size: 16px;
-    color: transparentize(#fff, .1);
+    color: transparentize(blue, .1);
   }
   
   p  {
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 15px;
+	line-height: 1.5;
+	font-weight: 500;
     color: transparentize(black, .2);
   }
   
@@ -149,6 +160,10 @@ $clouds: #ECF0F1;
   }
 }
 
+#ip {
+	width: unset;
+}
+
 .fp-container * {
   box-sizing: border-box;
 }
@@ -165,8 +180,10 @@ $clouds: #ECF0F1;
 }
 
 .fp-container .container {
-  width: 840px;
-  margin: 0 auto;
+  width: 800px;
+  margin-left: 200px;
+  margin-right: unset;
+  
 }
 
 .fp-container header {

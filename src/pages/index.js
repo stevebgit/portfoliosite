@@ -94,7 +94,7 @@ class HomeIndex extends React.Component {
                             alt
                         }))} />
 
-                         {/* <ul className="actions">
+                          {/* <ul className="actions">
 							<li><Link to={'full-profile'} className="button">Full Portfolio</Link></li>
                         </ul>  */}
                     </section>

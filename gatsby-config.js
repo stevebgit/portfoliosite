@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-	siteUrl: "https://www.gatsbydeveloper.com",
-    title: "Gatsby Starter - Strata by HTML5 UP",
-    author: "Hunter Chang",
-    description: "A Gatsby.js Starter based on Strata by HTML5 UP"
+	siteUrl: "http://gatsbydeveloper.com",
+    title: "Freelance Developer",
+    author: "Steve Bailey",
+    description: "Server-End Laravel Development/Front End React/Gatsby"
   },
   plugins: [
 	  'gatsby-plugin-sitemap',
