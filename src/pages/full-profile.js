@@ -8,7 +8,7 @@ import clear from '../assets/images/thumbs/clear.svg'
 import newcars from '../assets/images/thumbs/newcars.svg'
 import paylease from '../assets/images/thumbs/paylease.svg'
 import moc from '../assets/images/thumbs/moc.svg'
-import react from '../assets/images/thumbs/react-1000x333.jpeg'
+import react from '../assets/images/thumbs/react-1000x333.svg'
 import ip from '../assets/images/thumbs/ip.svg'
 import JobDisplay from '../components/job-display'
 /*
@@ -83,7 +83,7 @@ class fullProfile extends Component {
 								</a>
 								<div className="info">
 									<h3>Blizzard Entertainment</h3>
-									<p>B.E. purchased the "My Tespa" PHP/Laravel-based Platform, for administering all of the details of college video game 
+									<p>PHP/Laravel-based Platform, for administering college video game 
 									competition. Added features: Renewing Yearly Enrollment Qualifications, Event Coordinator tool.</p>
 								</div>
 							</li>
@@ -144,7 +144,7 @@ class fullProfile extends Component {
 
 						</ul>
 					</div>
-					<div style={{ marginTop: "20px" }}>
+					<div className="position-desc">
 						<JobDisplay job={this.state.job} />
 					</div>
 				</div>

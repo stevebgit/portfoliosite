@@ -12,6 +12,7 @@ $clouds: #ECF0F1;
 
 .fp-container .wrapper {
 	display: flex;
+	flex-flow: row wrap;
 	
 }
 
@@ -179,11 +180,39 @@ $clouds: #ECF0F1;
   font-family: 'Bree Serif', serif;
 }
 
-.fp-container .container {
-  width: 800px;
-  margin-left: 200px;
-  margin-right: unset;
+// .fp-container .container {
+//   width: 800px;
+//   margin-left: 200px;
+//   margin-right: unset;
   
+// }
+
+.fp-container .container{
+
+       flex: 3;
+       margin-left: 10px;
+       display: flex;
+       flex-flow: row wrap;
+       margin-right: unset;
+       & li {
+               //flex: 1;
+               //flex: 1;
+       }
+}
+
+
+.fp-container .position-desc {
+	flex: 1;
+	margin: 20px 20px 0 0;
+ }
+
+ 
+
+@media(max-width: 940px) {
+	.fp-container .position-desc {
+	    flex: 1;
+		margin: 20px 20px 0 35px;
+	}
 }
 
 .fp-container header {
