@@ -10,6 +10,7 @@ import paylease from '../assets/images/thumbs/paylease.svg'
 import moc from '../assets/images/thumbs/moc.svg'
 import react from '../assets/images/thumbs/react-1000x333.svg'
 import ip from '../assets/images/thumbs/ip.svg'
+import wordpress from '../assets/images/thumbs/wordpress.svg'
 import JobDisplay from '../components/job-display'
 /*
 	1.) get the grid working
@@ -76,7 +77,16 @@ class fullProfile extends Component {
 									<p>Heavy Duty Data-Centered Job with a lot of MySQL and Raw Legacy PHP Coding ( it was a rough codebase ) </p>
 								</div>
 							</li>
-
+							<li>
+								<a className="normal" href="#" onClick={this.updateJobDiv("wordpress")}>
+									<img src={wordpress} />
+								</a>
+								<div className="info">
+									<h3>Wordpress</h3>
+									<p> Developed 2 basic Wordpress Plugins
+									</p>
+								</div>
+							</li>
 							<li>
 								<a className="normal" href="#" onClick={this.updateJobDiv("bliz")}>
 									<img src={bliz} />
