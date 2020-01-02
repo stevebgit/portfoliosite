@@ -77,16 +77,7 @@ class fullProfile extends Component {
 									<p>Heavy Duty Data-Centered Job with a lot of MySQL and Raw Legacy PHP Coding ( it was a rough codebase ) </p>
 								</div>
 							</li>
-							<li>
-								<a className="normal" href="#" onClick={this.updateJobDiv("wordpress")}>
-									<img src={wordpress} />
-								</a>
-								<div className="info">
-									<h3>Wordpress</h3>
-									<p> Developed 2 basic Wordpress Plugins
-									</p>
-								</div>
-							</li>
+							
 							<li>
 								<a className="normal" href="#" onClick={this.updateJobDiv("bliz")}>
 									<img src={bliz} />
@@ -97,7 +88,16 @@ class fullProfile extends Component {
 									competition. Added features: Renewing Yearly Enrollment Qualifications, Event Coordinator tool.</p>
 								</div>
 							</li>
-
+							<li>
+								<a className="normal" href="#" onClick={this.updateJobDiv("wordpress")}>
+									<img src={wordpress} />
+								</a>
+								<div className="info">
+									<h3>Wordpress</h3>
+									<p> Developed 2 basic Wordpress Plugins
+									</p>
+								</div>
+							</li>
 							<li>
 								<a className="normal" href="#" onClick={this.updateJobDiv("moc")}>
 									<img src={moc} />
