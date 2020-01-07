@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import '../assets/scss/full-profile.scss'
 import moo from '../assets/images/thumbs/moo.svg'
+import lfp from '../assets/images/thumbs/hustler.svg'
 import bliz from '../assets/images/thumbs/bliz.svg'
 import clear from '../assets/images/thumbs/clear.svg'
 import newcars from '../assets/images/thumbs/newcars.svg'
@@ -115,6 +116,16 @@ class fullProfile extends Component {
 								<div className="info">
 									<h3>Newcars.com</h3>
 									<p>Worked on their Internal Internet Marketing Dashboard tool allowing the marketing team to maintain their Internet Ad campaigns and track perforomance for their Ad placements</p>
+								</div>
+							</li>
+
+							<li>
+								<a className="normal" href="#" onClick={this.updateJobDiv("lfp")}>
+									<img src={lfp} />
+								</a>
+								<div className="info">
+									<h3>Larry Flynt Publications</h3>
+									<p>Worked on members.hustler.com primarily, which was a Large OO-based PHP Codebase with jQuery</p>
 								</div>
 							</li>
 

@@ -28,7 +28,8 @@ const BlogPage = () => {
        		}
        	}
 	   }`)
-  return ( 
+	   
+  	return ( 
 		<BlogLayout>
 		
 		<main className="main">
